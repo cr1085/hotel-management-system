@@ -82,7 +82,7 @@ Antes de comenzar, asegúrate de tener instalado:
 ### Paso 2: Clonar el Repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/cr1085/hotel-management-system
 cd hotel-management
 ```
 
@@ -499,8 +499,63 @@ hotel-management/
 │   ├── package.json
 │   └── .env.example
 │
+├── docs/                    # Documentación del proyecto
+│   ├── uml/                # Diagramas UML
+│   │   ├── architecture-diagram.png
+│   │   ├── er-diagram.png
+│   │   └── use-case-diagram.png
+│   └── screenshots/        # Capturas del sistema
+│       ├── home.png
+│       ├── create-hotel.png
+│       ├── validations.png
+│       └── responsive.png
+│
 └── README.md               # Este archivo
 ```
+
+## Documentación UML
+
+### Diagrama de Arquitectura
+
+![Architecture Diagram](docs/uml/architecture-diagram.png)
+
+### Diagrama Entidad Relación
+
+![ER Diagram](docs/uml/er-diagram.png)
+
+### Diagrama de Casos de Uso
+
+![Use Case Diagram](docs/uml/use-case-diagram.png)
+
+## Capturas del Sistema
+
+### Pantalla Principal
+
+![Home](docs/screenshots/home.png)
+
+### Creación de Hoteles
+
+![Create Hotel](docs/screenshots/create-hotel.png)
+
+### Validaciones del Sistema
+
+![Validations](docs/screenshots/validations.png)
+
+### Vista Responsive
+
+![Responsive](docs/screenshots/responsive.png)
+
+## Pruebas Unitarias
+
+El proyecto incluye pruebas automatizadas utilizando PHPUnit.
+
+Ejecutar:
+
+```bash
+php artisan test
+
+```
+
 
 ## Instrucciones para Build de Producción
 
@@ -548,7 +603,7 @@ php artisan storage:link
 
 ```bash
 # Clonar el repositorio
-git clone <URL>
+git clone https://github.com/cr1085/hotel-management-system
 cd hotel-management
 
 # Crear una rama para tu trabajo
